@@ -13,7 +13,7 @@ $(function () {
   
   saveBtn.on('click', function (event) {
     var key = $(this).parent().attr('id');
-    var notes = $(this).siblings().eq(1).val();
+    var notes = $(this).siblings('.description').val();
     
     if(!notes) {
       alert('Please put the something in the time slot before saving.')
@@ -65,8 +65,10 @@ $(function () {
     var block = $(timeBlocks[i]);
     var key = block.attr('id');
     var notesLS = window.localStorage.getItem(key);
+    console.log(notesLS);
+    console.log(block.children('.description'));
     if (notesLS) {
-      block.children().eq(1).val(notesLS);
+      block.children('.description').val(notesLS);
     }
   }
   // TODO: Add code to display the current date in the header of the page.
