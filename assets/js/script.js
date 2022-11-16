@@ -70,4 +70,7 @@ $(function () {
     }
   }
   // TODO: Add code to display the current date in the header of the page.
+  // 
+  var date = $('#currentDay');
+  date.text(today.format('dddd, MMMM D YYYY, h:mm:ss a'))
 });
