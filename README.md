@@ -1,8 +1,6 @@
-# plan-for-me
+# Plan for Me
 
 ## Description
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
 Plan for Me is a site designed to help the average individual create schedule for their busy day.
 
