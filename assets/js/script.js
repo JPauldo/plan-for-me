@@ -31,7 +31,7 @@ $(function () {
     }
   }
   
-  // 
+  // Sets the background for a time block based on the time
   function setBlocksTime() {
     for (let i = 0; i < timeBlocks.length; i++) {
       var block = $(timeBlocks[i]);
@@ -41,7 +41,7 @@ $(function () {
       
       block.removeClass(lastClass);
       
-      // Checks to see if the hour has passed for the given block
+      // Checks to see if the hour has passed for a given block
       if(hr === hrCurrent) {
         block.addClass('present');
       }
